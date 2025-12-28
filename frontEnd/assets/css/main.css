@@ -1,0 +1,33 @@
+body {
+  background-color: #f4f6f9;
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+}
+
+.sidebar {
+  height: 100vh;
+  background-color: #0d6efd;
+  color: white;
+}
+
+.sidebar a {
+  color: white;
+  text-decoration: none;
+  display: block;
+  padding: 12px 15px;
+}
+
+.sidebar a:hover {
+  background-color: #084298;
+}
+
+.content {
+  padding: 20px;
+}
+
+.stat-card i {
+  font-size: 2rem;
+}
+
+.badge-box {
+  font-size: 1.5rem;
+}
