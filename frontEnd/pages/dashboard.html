@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <title>Dashboard | CyberAware</title>
@@ -17,108 +18,120 @@
 
 <body>
 
-<!-- TOP NAVBAR -->
-<nav class="navbar navbar-dark bg-dark">
+  <!-- TOP NAVBAR -->
+  <nav class="navbar navbar-dark bg-dark">
+    <div class="container-fluid">
+      <span class="navbar-brand fw-bold">
+        <i class="fa-solid fa-shield-halved"></i> CyberAware Platform
+      </span>
+      <span class="text-white">
+        <i class="fa-solid fa-user"></i> Student User
+      </span>
+    </div>
+  </nav>
+
   <div class="container-fluid">
-    <span class="navbar-brand fw-bold">
-      <i class="fa-solid fa-shield-halved"></i> CyberAware Platform
-    </span>
-    <span class="text-white">
-      <i class="fa-solid fa-user"></i> Student User
-    </span>
-  </div>
-</nav>
+    <div class="row">
 
-<div class="container-fluid">
-  <div class="row">
+      <!-- SIDEBAR -->
+      <div class="col-md-2 sidebar p-0">
+        <a href="dashboard.html"><i class="fa-solid fa-chart-line"></i> Dashboard</a>
+        <a href="modules.html"><i class="fa-solid fa-book"></i> Learning Modules</a>
+        <a href="simulations.html"><i class="fa-solid fa-flask"></i> Simulation Lab</a>
+        <a href="quiz.html"><i class="fa-solid fa-clipboard-question"></i> Assessments</a>
+        <a href="leaderboard.html"><i class="fa-solid fa-trophy"></i> Leaderboard</a>
+        <a href="profile.html"><i class="fa-solid fa-gear"></i> Settings</a>
+      </div>
 
-    <!-- SIDEBAR -->
-    <div class="col-md-2 sidebar p-0">
-      <a href="dashboard.html"><i class="fa-solid fa-chart-line"></i> Dashboard</a>
-      <a href="modules.html"><i class="fa-solid fa-book"></i> Learning Modules</a>
-      <a href="simulations.html"><i class="fa-solid fa-flask"></i> Simulation Lab</a>
-      <a href="quiz.html"><i class="fa-solid fa-clipboard-question"></i> Assessments</a>
-      <a href="leaderboard.html"><i class="fa-solid fa-trophy"></i> Leaderboard</a>
-      <a href="profile.html"><i class="fa-solid fa-gear"></i> Settings</a>
+      <!-- MAIN CONTENT -->
+      <div class="col-md-10 content">
+
+        <h3 class="mb-4">Security Awareness Dashboard</h3>
+
+        <!-- STATS -->
+        <div class="row text-center">
+          <div class="col-md-3">
+            <div class="card stat-card shadow">
+              <div class="card-body">
+                <i class="fa-solid fa-star text-warning"></i>
+                <h6 class="mt-2">Security Score</h6>
+                <h4>120</h4>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <div class="card stat-card shadow">
+              <div class="card-body">
+                <i class="fa-solid fa-layer-group text-success"></i>
+                <h6 class="mt-2">Current Level</h6>
+                <h4>Beginner</h4>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <div class="card stat-card shadow">
+              <div class="card-body">
+                <i class="fa-solid fa-award text-primary"></i>
+                <h6 class="mt-2">Badges Earned</h6>
+                <h4>2</h4>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <div class="card stat-card shadow">
+              <div class="card-body">
+                <i class="fa-solid fa-clock text-danger"></i>
+                <h6 class="mt-2">Completed Tasks</h6>
+                <h4>5</h4>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <div class="card stat-card shadow">
+              <div class="card-body">
+                <i class="fa-solid fa-clipboard-list text-danger"></i>
+                <h6 class="mt-2">Total Score</h6>
+                <h4 id="totalScore">0</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- PROGRESS -->
+        <div class="card mt-4 shadow">
+          <div class="card-body">
+            <h6>Overall Learning Progress</h6>
+            <div class="progress">
+              <div class="progress-bar bg-success" style="width: 40%">
+                40%
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ACTIONS -->
+        <div class="row mt-4">
+          <div class="col-md-6">
+            <a href="modules.html" class="btn btn-primary w-100">
+              Continue Learning
+            </a>
+          </div>
+          <div class="col-md-6">
+            <a href="simulations.html" class="btn btn-outline-primary w-100">
+              Go to Simulation Lab
+            </a>
+          </div>
+        </div>
+
+      </div>
     </div>
-
-    <!-- MAIN CONTENT -->
-    <div class="col-md-10 content">
-
-      <h3 class="mb-4">Security Awareness Dashboard</h3>
-
-      <!-- STATS -->
-      <div class="row text-center">
-        <div class="col-md-3">
-          <div class="card stat-card shadow">
-            <div class="card-body">
-              <i class="fa-solid fa-star text-warning"></i>
-              <h6 class="mt-2">Security Score</h6>
-              <h4>120</h4>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-3">
-          <div class="card stat-card shadow">
-            <div class="card-body">
-              <i class="fa-solid fa-layer-group text-success"></i>
-              <h6 class="mt-2">Current Level</h6>
-              <h4>Beginner</h4>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-3">
-          <div class="card stat-card shadow">
-            <div class="card-body">
-              <i class="fa-solid fa-award text-primary"></i>
-              <h6 class="mt-2">Badges Earned</h6>
-              <h4>2</h4>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-3">
-          <div class="card stat-card shadow">
-            <div class="card-body">
-              <i class="fa-solid fa-clock text-danger"></i>
-              <h6 class="mt-2">Completed Tasks</h6>
-              <h4>5</h4>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- PROGRESS -->
-      <div class="card mt-4 shadow">
-        <div class="card-body">
-          <h6>Overall Learning Progress</h6>
-          <div class="progress">
-            <div class="progress-bar bg-success" style="width: 40%">
-              40%
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- ACTIONS -->
-      <div class="row mt-4">
-        <div class="col-md-6">
-          <a href="modules.html" class="btn btn-primary w-100">
-            Continue Learning
-          </a>
-        </div>
-        <div class="col-md-6">
-          <a href="simulations.html" class="btn btn-outline-primary w-100">
-            Go to Simulation Lab
-          </a>
-        </div>
-      </div>
-
-    </div>
   </div>
-</div>
-
+  <script src="../assets/js/progress.js"></script>
+  <script src="../assets/js/dashboard.js"></script>
 </body>
+
 </html>

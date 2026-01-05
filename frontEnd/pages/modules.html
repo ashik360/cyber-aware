@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Learning Modules | CyberAware</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="../assets/css/main.css">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-dark bg-dark">
+  <div class="container-fluid">
+    <span class="navbar-brand fw-bold">
+      <i class="fa-solid fa-shield-halved"></i> CyberAware Platform
+    </span>
+    <span class="text-white">
+      <i class="fa-solid fa-user"></i> Student User
+    </span>
+  </div>
+</nav>
+
+<div class="container-fluid">
+  <div class="row">
+
+    <!-- SIDEBAR -->
+    <div class="col-md-2 sidebar p-0">
+      <a href="dashboard.html">Dashboard</a>
+      <a href="modules.html" class="bg-primary">Learning Modules</a>
+      <a href="simulations.html">Simulation Lab</a>
+      <a href="quiz.html">Assessments</a>
+      <a href="leaderboard.html">Leaderboard</a>
+      <a href="profile.html">Settings</a>
+    </div>
+
+    <!-- CONTENT -->
+    <div class="col-md-10 content">
+      <h3 class="mb-4">Cyber Awareness Learning Modules</h3>
+
+      <div class="row">
+
+        <!-- BEGINNER -->
+        <div class="col-md-4">
+          <div class="card shadow">
+            <div class="card-body">
+              <h5>
+                <i class="fa-solid fa-unlock text-success"></i>
+                Beginner Level
+              </h5>
+              <ul>
+                <li>Phishing Basics</li>
+                <li>Password Safety</li>
+                <li>Email Threats</li>
+              </ul>
+
+              <div class="progress mb-2">
+                <div class="progress-bar bg-success" style="width: 60%">60%</div>
+              </div>
+
+              <a href="lesson.html" class="btn btn-primary w-100">
+                Continue Module
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- INTERMEDIATE -->
+        <div class="col-md-4">
+          <div class="card shadow">
+            <div class="card-body">
+              <h5>
+                <i class="fa-solid fa-lock text-warning"></i>
+                Intermediate Level
+              </h5>
+              <ul>
+                <li>Malware Awareness</li>
+                <li>Website Security</li>
+                <li>Social Engineering</li>
+              </ul>
+
+              <div class="progress mb-2">
+                <div class="progress-bar bg-warning" style="width: 0%">Locked</div>
+              </div>
+
+              <button class="btn btn-secondary w-100" disabled>
+                Locked
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- ADVANCED -->
+        <div class="col-md-4">
+          <div class="card shadow">
+            <div class="card-body">
+              <h5>
+                <i class="fa-solid fa-lock text-danger"></i>
+                Advanced Level
+              </h5>
+              <ul>
+                <li>Advanced Threats</li>
+                <li>Risk Assessment</li>
+                <li>Security Best Practices</li>
+              </ul>
+
+              <div class="progress mb-2">
+                <div class="progress-bar bg-danger" style="width: 0%">Locked</div>
+              </div>
+
+              <button class="btn btn-secondary w-100" disabled>
+                Locked
+              </button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
