@@ -31,3 +31,38 @@ body {
 .badge-box {
   font-size: 1.5rem;
 }
+
+/* ===== COMMON SIDEBAR ===== */
+.sidebar {
+  min-height: 100vh;
+  background-color: #212529;
+}
+
+.sidebar a {
+  display: block;
+  padding: 12px 16px;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+.sidebar a:hover {
+  background-color: #0d6efd;
+}
+
+.sidebar a.active {
+  background-color: #0d6efd;
+  font-weight: bold;
+}
+
+/* ===== CONTENT AREA ===== */
+.content {
+  padding: 20px;
+  background-color: #f8f9fa;
+  min-height: 100vh;
+}
+
+/* ===== ADMIN NAVBAR ===== */
+.admin-navbar {
+  background-color: #000;
+}

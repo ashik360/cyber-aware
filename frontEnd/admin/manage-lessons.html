@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Manage Lessons | Admin</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
+  <!-- MAIN CSS (VERY IMPORTANT) -->
+  <link rel="stylesheet" href="../assets/css/main.css">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-dark admin-navbar">
+  <div class="container-fluid">
+    <span class="navbar-brand fw-bold">
+      <i class="fa-solid fa-shield-halved"></i> CyberAware Admin
+    </span>
+    <span class="text-white">Administrator</span>
+  </div>
+</nav>
+
+<div class="container-fluid">
+  <div class="row">
+
+    <!-- SIDEBAR -->
+    <div class="col-md-2 sidebar p-0">
+      <a href="admin-dashboard.html">Dashboard</a>
+      <a href="manage-lessons.html" class="active">Manage Lessons</a>
+      <a href="manage-quizzes.html">Manage Quizzes</a>
+      <a href="view-progress.html">User Progress</a>
+    </div>
+
+    <!-- CONTENT -->
+    <div class="col-md-10 content">
+      <h3>Manage Lessons</h3>
+
+      <div class="card shadow mt-3">
+        <div class="card-body">
+          <label class="form-label">Lesson Title</label>
+          <input type="text" class="form-control">
+
+          <label class="form-label mt-2">Description</label>
+          <textarea class="form-control"></textarea>
+
+          <button class="btn btn-primary mt-3">
+            Add Lesson
+          </button>
+        </div>
+      </div>
+
+      <div class="card shadow mt-4">
+        <div class="card-body">
+          <h5>Existing Lessons</h5>
+          <ul class="list-group mt-2">
+            <li class="list-group-item">Phishing Awareness</li>
+            <li class="list-group-item">Password Security</li>
+            <li class="list-group-item">Malware Basics</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
