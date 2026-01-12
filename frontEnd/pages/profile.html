@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>User Profile | Cyber Awareness Platform</title>
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="../assets/css/main.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-dark bg-dark px-3">
+  <span class="navbar-brand mb-0 h1">
+    Cyber Awareness Platform
+  </span>
+</nav>
+
+<!-- MAIN LAYOUT -->
+<div class="container-fluid">
+  <div class="row">
+
+    <!-- SIDEBAR -->
+    <div class="col-md-2 bg-dark text-white min-vh-100 p-3">
+      <h5 class="text-center mb-4">Menu</h5>
+
+      <ul class="nav flex-column">
+        <li class="nav-item mb-2">
+          <a class="nav-link text-white" href="dashboard.html">Dashboard</a>
+        </li>
+        <li class="nav-item mb-2">
+          <a class="nav-link text-white" href="levels.html">Levels</a>
+        </li>
+        <li class="nav-item mb-2">
+          <a class="nav-link text-white" href="modules.html">Modules</a>
+        </li>
+        <li class="nav-item mb-2">
+          <a class="nav-link text-white" href="leaderboard.html">Leaderboard</a>
+        </li>
+        <li class="nav-item mb-2">
+          <a class="nav-link text-white" href="badges.html">Badges</a>
+        </li>
+        <li class="nav-item mb-2">
+          <a class="nav-link text-white active" href="profile.html">Profile</a>
+        </li>
+        <li class="nav-item mt-4">
+          <a class="nav-link text-danger" href="../index.html">Logout</a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- CONTENT -->
+    <div class="col-md-10 p-4">
+
+      <!-- HEADER -->
+      <h3 class="mb-1">User Profile</h3>
+      <p class="text-muted">
+        View your learning progress and achievements
+      </p>
+
+      <!-- PROFILE CARD -->
+      <div class="card shadow mb-4">
+        <div class="card-body row align-items-center">
+          <div class="col-md-2 text-center">
+            <img src="https://via.placeholder.com/120"
+                 class="rounded-circle img-fluid"
+                 alt="User Avatar">
+          </div>
+          <div class="col-md-10">
+            <h4>Ashik</h4>
+            <p class="mb-1">Level: <strong>Beginner</strong></p>
+            <p class="mb-1">Total Score: <strong>1100</strong></p>
+            <p class="text-muted mb-0">Member since: Jan 2026</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- PROGRESS OVERVIEW -->
+      <div class="row mb-4">
+
+        <div class="col-md-4">
+          <div class="card shadow text-center">
+            <div class="card-body">
+              <h4>70%</h4>
+              <p class="text-muted mb-0">Course Completion</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card shadow text-center">
+            <div class="card-body">
+              <h4>4</h4>
+              <p class="text-muted mb-0">Modules Completed</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card shadow text-center">
+            <div class="card-body">
+              <h4>2</h4>
+              <p class="text-muted mb-0">Badges Earned</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- LEVEL PROGRESS -->
+      <div class="card shadow mb-4">
+        <div class="card-body">
+          <h5>Level Progress</h5>
+
+          <p class="mb-1">Beginner Level</p>
+          <div class="progress mb-3">
+            <div class="progress-bar bg-success" style="width: 80%;">
+              80%
+            </div>
+          </div>
+
+          <p class="mb-1">Intermediate Level</p>
+          <div class="progress mb-3">
+            <div class="progress-bar bg-warning" style="width: 30%;">
+              30%
+            </div>
+          </div>
+
+          <p class="mb-1">Advanced Level</p>
+          <div class="progress">
+            <div class="progress-bar bg-secondary" style="width: 0%;">
+              Locked
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- RECENT ACTIVITY -->
+      <div class="card shadow">
+        <div class="card-body">
+          <h5>Recent Activity</h5>
+
+          <ul class="list-group list-group-flush mt-2">
+            <li class="list-group-item">
+              ✔ Completed Phishing Detection Game
+            </li>
+            <li class="list-group-item">
+              ✔ Passed Password Strength Quiz
+            </li>
+            <li class="list-group-item">
+              ⏳ Malware Website Identification (In Progress)
+            </li>
+          </ul>
+
+          <small class="text-muted d-block mt-2">
+            Activity updates automatically based on user actions
+          </small>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

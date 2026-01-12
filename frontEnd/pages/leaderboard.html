@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Leaderboard | Cyber Awareness Platform</title>
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="../assets/css/main.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-dark bg-dark px-3">
+  <span class="navbar-brand mb-0 h1">
+    Cyber Awareness Platform
+  </span>
+</nav>
+
+<!-- MAIN LAYOUT -->
+<div class="container-fluid">
+  <div class="row">
+
+    <!-- SIDEBAR -->
+    <div class="col-md-2 bg-dark text-white min-vh-100 p-3">
+      <h5 class="text-center mb-4">Menu</h5>
+
+      <ul class="nav flex-column">
+        <li class="nav-item mb-2">
+          <a class="nav-link text-white" href="dashboard.html">Dashboard</a>
+        </li>
+        <li class="nav-item mb-2">
+          <a class="nav-link text-white" href="levels.html">Levels</a>
+        </li>
+        <li class="nav-item mb-2">
+          <a class="nav-link text-white" href="modules.html">Modules</a>
+        </li>
+        <li class="nav-item mb-2">
+          <a class="nav-link text-white active" href="leaderboard.html">Leaderboard</a>
+        </li>
+        <li class="nav-item mt-4">
+          <a class="nav-link text-danger" href="../index.html">Logout</a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- CONTENT -->
+    <div class="col-md-10 p-4">
+
+      <!-- HEADER -->
+      <h3 class="mb-1">Leaderboard</h3>
+      <p class="text-muted">
+        Compare your cybersecurity awareness score with others
+      </p>
+
+      <!-- TOP STATS -->
+      <div class="row mt-4 mb-4">
+
+        <div class="col-md-4">
+          <div class="card shadow text-center">
+            <div class="card-body">
+              <h4>1250</h4>
+              <p class="text-muted mb-0">Highest Score</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card shadow text-center">
+            <div class="card-body">
+              <h4>Beginner</h4>
+              <p class="text-muted mb-0">Top Level Achieved</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card shadow text-center">
+            <div class="card-body">
+              <h4>42</h4>
+              <p class="text-muted mb-0">Active Learners</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- LEADERBOARD TABLE -->
+      <div class="card shadow">
+        <div class="card-body">
+          <h5>Top Performers</h5>
+
+          <div class="table-responsive mt-3">
+            <table class="table table-striped table-hover">
+              <thead class="table-dark">
+                <tr>
+                  <th>Rank</th>
+                  <th>User</th>
+                  <th>Level</th>
+                  <th>Score</th>
+                  <th>Badges</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>🥇 1</td>
+                  <td>Rakib</td>
+                  <td>Beginner</td>
+                  <td>1250</td>
+                  <td>3</td>
+                </tr>
+                <tr>
+                  <td>🥈 2</td>
+                  <td>Kabir</td>
+                  <td>Beginner</td>
+                  <td>1100</td>
+                  <td>2</td>
+                </tr>
+                <tr>
+                  <td>🥉 3</td>
+                  <td>User123</td>
+                  <td>Beginner</td>
+                  <td>980</td>
+                  <td>2</td>
+                </tr>
+                <tr>
+                  <td>4</td>
+                  <td>User456</td>
+                  <td>Beginner</td>
+                  <td>850</td>
+                  <td>1</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <small class="text-muted">
+            Leaderboard updates dynamically based on user scores and progress
+          </small>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
