@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Learning Levels | Cyber Awareness Platform</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="../assets/css/main.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-dark bg-dark px-3">
+  <span class="navbar-brand mb-0 h1">
+    Cyber Awareness Platform
+  </span>
+</nav>
+
+<!-- MAIN LAYOUT -->
+<div class="container-fluid">
+  <div class="row">
+
+    <!-- SIDEBAR -->
+    <div class="col-md-2 bg-dark text-white min-vh-100 p-3">
+      <h5 class="text-center mb-4">Menu</h5>
+
+      <ul class="nav flex-column">
+        <li class="nav-item mb-2">
+          <a class="nav-link text-white" href="dashboard.html">Dashboard</a>
+        </li>
+        <li class="nav-item mb-2">
+          <a class="nav-link text-white active" href="levels.html">Levels</a>
+        </li>
+        <li class="nav-item mb-2">
+          <a class="nav-link text-white" href="profile.html">Profile</a>
+        </li>
+        <li class="nav-item mb-2">
+          <a class="nav-link text-white" href="leaderboard.html">Leaderboard</a>
+        </li>
+        <li class="nav-item mt-4">
+          <a class="nav-link text-danger" href="../index.html">Logout</a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- CONTENT AREA -->
+    <div class="col-md-10 p-4">
+
+      <!-- HEADER -->
+      <h3 class="mb-1">Learning Levels</h3>
+      <p class="text-muted">
+        Progress through structured cybersecurity awareness levels
+      </p>
+
+      <!-- LEVEL CARDS -->
+      <div class="row mt-4">
+
+        <!-- BEGINNER LEVEL -->
+        <div class="col-md-4">
+          <div class="card shadow border-success">
+            <div class="card-body text-center">
+              <h4 class="text-success">Beginner</h4>
+              <p class="text-muted">
+                Cybersecurity basics & awareness
+              </p>
+
+              <div class="progress mb-3">
+                <div class="progress-bar bg-success" style="width: 40%">
+                  40%
+                </div>
+              </div>
+
+              <span class="badge bg-success mb-3">
+                Unlocked
+              </span>
+
+              <div class="d-grid">
+                <a href="modules.html" class="btn btn-success">
+                  Enter Level
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- INTERMEDIATE LEVEL -->
+        <div class="col-md-4">
+          <div class="card shadow border-warning">
+            <div class="card-body text-center">
+              <h4 class="text-warning">Intermediate</h4>
+              <p class="text-muted">
+                Threat identification & prevention
+              </p>
+
+              <div class="progress mb-3">
+                <div class="progress-bar bg-warning" style="width: 0%">
+                  0%
+                </div>
+              </div>
+
+              <span class="badge bg-warning mb-3">
+                Locked
+              </span>
+
+              <div class="d-grid">
+                <button class="btn btn-outline-warning" disabled>
+                  Locked
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ADVANCED LEVEL -->
+        <div class="col-md-4">
+          <div class="card shadow border-danger">
+            <div class="card-body text-center">
+              <h4 class="text-danger">Advanced</h4>
+              <p class="text-muted">
+                Advanced cyber attacks & defenses
+              </p>
+
+              <div class="progress mb-3">
+                <div class="progress-bar bg-danger" style="width: 0%">
+                  0%
+                </div>
+              </div>
+
+              <span class="badge bg-secondary mb-3">
+                Locked
+              </span>
+
+              <div class="d-grid">
+                <button class="btn btn-outline-secondary" disabled>
+                  Locked
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- LEVEL INFO -->
+      <div class="card shadow mt-5">
+        <div class="card-body">
+          <h5>How Levels Work</h5>
+          <ul class="mt-2">
+            <li>Each level contains multiple learning modules</li>
+            <li>Users must complete games and quizzes to progress</li>
+            <li>Higher levels introduce real‑world cyber attack simulations</li>
+            <li>Progress and unlocks are handled dynamically in backend</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
