@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="assets/css/main.css" />
   </head>
 
-  <body>
+  <body class="scanlines">
     <nav class="navbar topbar px-3">
       <span class="navbar-brand fw-bold">
         <i class="fa-solid fa-shield-halved accent"></i> CyberAware
@@ -42,35 +42,55 @@
         </div>
         <div class="col-lg-6">
           <div class="panel glass">
+            <div class="hud mb-3">
+              <div class="hud-bar">
+                <div class="hud-bar-label">
+                  <span>System Integrity</span>
+                  <span>84%</span>
+                </div>
+                <div class="progress-track">
+                  <div class="progress-fill hp-fill" style="width: 84%"></div>
+                </div>
+              </div>
+              <div class="hud-bar">
+                <div class="hud-bar-label">
+                  <span>XP</span>
+                  <span>420 / 600</span>
+                </div>
+                <div class="progress-track">
+                  <div class="progress-fill xp-fill" style="width: 70%"></div>
+                </div>
+              </div>
+            </div>
             <div class="game-grid">
-              <div class="game-tile">
+              <a class="game-tile text-decoration-none" href="pages/game-phishing.html">
                 <div class="icon-circle">
                   <i class="fa-solid fa-envelope-open-text"></i>
                 </div>
                 <div class="fw-semibold">Phishing Trap</div>
                 <span class="status-pill warn">Timed</span>
-              </div>
-              <div class="game-tile">
+              </a>
+              <a class="game-tile text-decoration-none" href="pages/game-password.html">
                 <div class="icon-circle">
                   <i class="fa-solid fa-key"></i>
                 </div>
                 <div class="fw-semibold">Password Forge</div>
                 <span class="status-pill warn">Skill</span>
-              </div>
-              <div class="game-tile">
+              </a>
+              <a class="game-tile text-decoration-none" href="pages/game-malware.html">
                 <div class="icon-circle">
                   <i class="fa-solid fa-globe"></i>
                 </div>
                 <div class="fw-semibold">Malware Radar</div>
                 <span class="status-pill warn">Timed</span>
-              </div>
-              <div class="game-tile">
+              </a>
+              <a class="game-tile text-decoration-none" href="pages/game-social-engineering.html">
                 <div class="icon-circle">
                   <i class="fa-solid fa-user-secret"></i>
                 </div>
                 <div class="fw-semibold">Social Shield</div>
                 <span class="status-pill warn">Decision</span>
-              </div>
+              </a>
             </div>
           </div>
         </div>
@@ -82,31 +102,31 @@
           <span class="fw-semibold">Training Phases</span>
         </div>
         <div class="game-grid">
-          <div class="game-tile">
+          <a class="game-tile text-decoration-none" href="pages/lesson.html">
             <div class="icon-circle"><i class="fa-solid fa-compass"></i></div>
             <div class="fw-semibold">Orientation</div>
             <span class="status-pill warn">Phase 1</span>
-          </div>
-          <div class="game-tile">
+          </a>
+          <a class="game-tile text-decoration-none" href="pages/dashboard.html">
             <div class="icon-circle"><i class="fa-solid fa-gamepad"></i></div>
             <div class="fw-semibold">Missions</div>
             <span class="status-pill warn">Phase 2</span>
-          </div>
-          <div class="game-tile">
+          </a>
+          <a class="game-tile text-decoration-none" href="pages/quiz.html">
             <div class="icon-circle"><i class="fa-solid fa-clipboard-check"></i></div>
             <div class="fw-semibold">Assessment</div>
             <span class="status-pill warn">Phase 3</span>
-          </div>
-          <div class="game-tile">
+          </a>
+          <a class="game-tile text-decoration-none" href="pages/badges.html">
             <div class="icon-circle"><i class="fa-solid fa-shield-heart"></i></div>
             <div class="fw-semibold">Mastery</div>
             <span class="status-pill warn">Phase 4</span>
-          </div>
-          <div class="game-tile">
+          </a>
+          <a class="game-tile text-decoration-none" href="pages/certificates.html">
             <div class="icon-circle"><i class="fa-solid fa-certificate"></i></div>
             <div class="fw-semibold">Certification</div>
             <span class="status-pill warn">Phase 5</span>
-          </div>
+          </a>
         </div>
       </div>
 

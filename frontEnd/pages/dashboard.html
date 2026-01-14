@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="../assets/css/main.css" />
   </head>
 
-  <body>
+  <body class="scanlines">
     <nav class="navbar topbar px-3">
       <span class="navbar-brand fw-bold">
         <i class="fa-solid fa-shield-halved accent"></i> CyberAware
@@ -76,7 +76,7 @@
           </div>
           <div>
             <div id="totalScore" class="stat-value">0</div>
-            <div class="stat-label">Score</div>
+            <div class="stat-label">XP</div>
           </div>
         </div>
         <div class="stat-tile">
@@ -85,7 +85,7 @@
           </div>
           <div>
             <div id="currentLevel" class="stat-value">Beginner</div>
-            <div class="stat-label">Level</div>
+            <div class="stat-label">Rank</div>
           </div>
         </div>
         <div class="stat-tile">
@@ -94,7 +94,7 @@
           </div>
           <div>
             <div id="completedTasks" class="stat-value">0 / 4</div>
-            <div class="stat-label">Completed</div>
+            <div class="stat-label">Missions</div>
           </div>
         </div>
         <div class="stat-tile">
@@ -103,14 +103,41 @@
           </div>
           <div>
             <div id="riskLevel" class="stat-value">High</div>
-            <div class="stat-label">Risk</div>
+            <div class="stat-label">Threat Level</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="panel mt-4">
+        <div class="d-flex align-items-center gap-2 mb-3">
+          <i class="fa-solid fa-heart-pulse accent"></i>
+          <span class="fw-semibold">Core Status</span>
+        </div>
+        <div class="hud">
+          <div class="hud-bar">
+            <div class="hud-bar-label">
+              <span>System Integrity</span>
+              <span>84%</span>
+            </div>
+            <div class="progress-track">
+              <div class="progress-fill hp-fill" style="width: 84%"></div>
+            </div>
+          </div>
+          <div class="hud-bar">
+            <div class="hud-bar-label">
+              <span>XP Gain</span>
+              <span>420 / 600</span>
+            </div>
+            <div class="progress-track">
+              <div class="progress-fill xp-fill" style="width: 70%"></div>
+            </div>
           </div>
         </div>
       </div>
 
       <div class="panel mt-4">
         <div class="d-flex justify-content-between align-items-center mb-2">
-          <span class="text-muted small">Progress</span>
+          <span class="text-muted small">Mission Progress</span>
           <span id="levelProgressLabel" class="text-muted small">0%</span>
         </div>
         <div class="progress-track">
@@ -170,31 +197,31 @@
           <span class="fw-semibold">Training Phases</span>
         </div>
         <div class="game-grid">
-          <div class="game-tile">
+          <a class="game-tile text-decoration-none" href="lesson.html">
             <div class="icon-circle"><i class="fa-solid fa-compass"></i></div>
             <div class="fw-semibold">Phase 1</div>
             <span class="status-pill warn">Orientation</span>
-          </div>
-          <div class="game-tile">
+          </a>
+          <a class="game-tile text-decoration-none" href="dashboard.html">
             <div class="icon-circle"><i class="fa-solid fa-gamepad"></i></div>
             <div class="fw-semibold">Phase 2</div>
             <span class="status-pill warn">Missions</span>
-          </div>
-          <div class="game-tile">
+          </a>
+          <a class="game-tile text-decoration-none" href="quiz.html">
             <div class="icon-circle"><i class="fa-solid fa-clipboard-check"></i></div>
             <div class="fw-semibold">Phase 3</div>
             <span class="status-pill warn">Assessment</span>
-          </div>
-          <div class="game-tile">
+          </a>
+          <a class="game-tile text-decoration-none" href="badges.html">
             <div class="icon-circle"><i class="fa-solid fa-shield-heart"></i></div>
             <div class="fw-semibold">Phase 4</div>
             <span class="status-pill warn">Mastery</span>
-          </div>
-          <div class="game-tile">
+          </a>
+          <a class="game-tile text-decoration-none" href="certificates.html">
             <div class="icon-circle"><i class="fa-solid fa-certificate"></i></div>
             <div class="fw-semibold">Phase 5</div>
             <span class="status-pill warn">Certification</span>
-          </div>
+          </a>
         </div>
       </div>
     </main>
