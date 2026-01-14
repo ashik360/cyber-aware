@@ -1,161 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Phishing Detection Game | Cyber Awareness Platform</title>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Phishing Trap | CyberAware</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <!-- Bootstrap -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../assets/css/main.css" />
+  </head>
+  <body>
+    <nav class="navbar topbar px-3">
+      <a class="icon-button" href="dashboard.html" title="Back to Hub">
+        <i class="fa-solid fa-arrow-left"></i>
+      </a>
+      <span class="navbar-brand fw-bold ms-2">
+        <i class="fa-solid fa-envelope-open-text accent"></i> Phishing Trap
+      </span>
+      <span class="status-pill warn">
+        <i class="fa-solid fa-stopwatch"></i>
+        <span id="timer">90s</span>
+      </span>
+    </nav>
 
-  <!-- Custom CSS -->
-  <link rel="stylesheet" href="../assets/css/main.css">
-</head>
-<body>
-
-<!-- NAVBAR -->
-<nav class="navbar navbar-dark bg-dark px-3">
-  <span class="navbar-brand mb-0 h1">
-    Cyber Awareness Platform
-  </span>
-</nav>
-
-<!-- MAIN LAYOUT -->
-<div class="container-fluid">
-  <div class="row">
-
-    <!-- SIDEBAR -->
-    <div class="col-md-2 bg-dark text-white min-vh-100 p-3">
-      <h5 class="text-center mb-4">Menu</h5>
-
-      <ul class="nav flex-column">
-        <li class="nav-item mb-2">
-          <a class="nav-link text-white" href="dashboard.html">Dashboard</a>
-        </li>
-        <li class="nav-item mb-2">
-          <a class="nav-link text-white" href="levels.html">Levels</a>
-        </li>
-        <li class="nav-item mb-2">
-          <a class="nav-link text-white active" href="modules.html">Modules</a>
-        </li>
-        <li class="nav-item mt-4">
-          <a class="nav-link text-danger" href="../index.html">Exit Game</a>
-        </li>
-      </ul>
-    </div>
-
-    <!-- CONTENT -->
-    <div class="col-md-10 p-4">
-
-      <!-- HEADER -->
-      <h3 class="mb-1">Phishing Email Detection</h3>
-      <p class="text-muted">
-        Analyze the email and identify suspicious indicators
-      </p>
-
-      <!-- GAME INSTRUCTIONS -->
-      <div class="card shadow mb-4">
-        <div class="card-body">
-          <h5>Game Instructions</h5>
-          <ul class="mt-2">
-            <li>Read the email carefully</li>
-            <li>Identify signs of phishing (fake links, urgent language, sender address)</li>
-            <li>Select suspicious elements</li>
-            <li>Score is calculated based on correct selections</li>
-          </ul>
+    <main class="container stage">
+      <div class="panel glass mb-3">
+        <div class="d-flex align-items-center gap-3">
+          <div class="icon-circle">
+            <i class="fa-solid fa-triangle-exclamation"></i>
+          </div>
+          <div>
+            <div class="fw-semibold">Identify the red flags</div>
+            <div class="text-muted small">Select all suspicious indicators.</div>
+          </div>
         </div>
       </div>
 
-      <!-- EMAIL SIMULATION -->
-      <div class="card shadow mb-4">
-        <div class="card-body">
-
-          <h5 class="mb-3">Email Preview</h5>
-
-          <div class="border p-3 rounded">
-
-            <p><strong>From:</strong> security@paypa1-support.com</p>
-            <p><strong>To:</strong> user@email.com</p>
-            <p><strong>Subject:</strong> Urgent! Verify Your Account Immediately</p>
-
-            <hr>
-
-            <p>Dear User,</p>
-
-            <p>
-              We noticed unusual activity in your account.  
-              Please verify your account immediately to avoid suspension.
-            </p>
-
-            <p>
-              <a href="#" class="text-danger">
-                Click here to verify your account
-              </a>
-            </p>
-
-            <p>
-              Failure to act within 24 hours will result in permanent account lock.
-            </p>
-
-            <p>Thank you,<br>PayPal Security Team</p>
-
+      <div class="panel mb-4">
+        <div class="d-flex justify-content-between align-items-start mb-3">
+          <div>
+            <div class="text-muted small">From</div>
+            <div>security@paypa1-support.com</div>
           </div>
-
+          <span class="status-pill warn">
+            <i class="fa-solid fa-triangle-exclamation"></i> External
+          </span>
+        </div>
+        <div class="text-muted small">Subject</div>
+        <div class="fw-semibold mb-3">Verify your account immediately</div>
+        <div class="panel glass">
+          <p>Hello,</p>
+          <p>
+            We detected unusual activity. Verify now to avoid suspension.
+          </p>
+          <p><a href="#" class="danger">Click here to verify</a></p>
+          <p>Failure to act within 24 hours will lock your account.</p>
+          <p>Thanks, PayPal Security Team</p>
         </div>
       </div>
 
-      <!-- SUSPICIOUS ELEMENT SELECTION -->
-      <div class="card shadow mb-4">
-        <div class="card-body">
-          <h5>Select Suspicious Indicators</h5>
-
+      <div class="panel mb-4">
+        <div class="d-flex align-items-center gap-2 mb-3">
+          <i class="fa-solid fa-magnifying-glass warning"></i>
+          <span class="fw-semibold">Select suspicious clues</span>
+        </div>
+        <div class="clue-list">
           <div class="form-check">
-            <input class="form-check-input" type="checkbox" disabled>
-            <label class="form-check-label">
-              Suspicious sender email domain
+            <input class="form-check-input" type="checkbox" id="phish-1" data-correct="true" />
+            <label class="form-check-label" for="phish-1">
+              Lookalike sender domain
             </label>
           </div>
-
           <div class="form-check">
-            <input class="form-check-input" type="checkbox" disabled>
-            <label class="form-check-label">
-              Urgent and threatening language
+            <input class="form-check-input" type="checkbox" id="phish-2" data-correct="true" />
+            <label class="form-check-label" for="phish-2">
+              Urgent threat language
             </label>
           </div>
-
           <div class="form-check">
-            <input class="form-check-input" type="checkbox" disabled>
-            <label class="form-check-label">
+            <input class="form-check-input" type="checkbox" id="phish-3" data-correct="true" />
+            <label class="form-check-label" for="phish-3">
               Suspicious verification link
             </label>
           </div>
-
           <div class="form-check">
-            <input class="form-check-input" type="checkbox" disabled>
-            <label class="form-check-label">
-              Generic greeting (Dear User)
+            <input class="form-check-input" type="checkbox" id="phish-4" data-correct="true" />
+            <label class="form-check-label" for="phish-4">
+              Generic greeting
             </label>
           </div>
-
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="phish-5" data-correct="false" />
+            <label class="form-check-label" for="phish-5">
+              Short email
+            </label>
+          </div>
         </div>
       </div>
 
-      <!-- GAME ACTIONS -->
-      <div class="card shadow">
-        <div class="card-body text-center">
-          <h5>Submit Your Analysis</h5>
-          <p class="text-muted">
-            Scoring and validation will be handled dynamically
-          </p>
-
-          <button class="btn btn-primary" disabled>
-            Submit Answer
-          </button>
-        </div>
+      <div class="panel text-center">
+        <button id="submitPhishing" class="btn btn-glow">
+          Submit
+        </button>
+        <div id="result" class="result-box mt-3"></div>
       </div>
+    </main>
 
-    </div>
-  </div>
-</div>
-
-</body>
+    <script src="../assets/js/progress.js"></script>
+    <script src="../assets/js/phishing.js"></script>
+  </body>
 </html>

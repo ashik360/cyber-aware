@@ -1,153 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Badges & Achievements | Cyber Awareness Platform</title>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Badges | CyberAware</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <!-- Bootstrap -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-
-  <!-- Custom CSS -->
-  <link rel="stylesheet" href="../assets/css/main.css">
-</head>
-<body>
-
-<!-- NAVBAR -->
-<nav class="navbar navbar-dark bg-dark px-3">
-  <span class="navbar-brand mb-0 h1">
-    Cyber Awareness Platform
-  </span>
-</nav>
-
-<!-- MAIN LAYOUT -->
-<div class="container-fluid">
-  <div class="row">
-
-    <!-- SIDEBAR -->
-    <div class="col-md-2 bg-dark text-white min-vh-100 p-3">
-      <h5 class="text-center mb-4">Menu</h5>
-
-      <ul class="nav flex-column">
-        <li class="nav-item mb-2">
-          <a class="nav-link text-white" href="dashboard.html">Dashboard</a>
-        </li>
-        <li class="nav-item mb-2">
-          <a class="nav-link text-white" href="levels.html">Levels</a>
-        </li>
-        <li class="nav-item mb-2">
-          <a class="nav-link text-white" href="modules.html">Modules</a>
-        </li>
-        <li class="nav-item mb-2">
-          <a class="nav-link text-white" href="leaderboard.html">Leaderboard</a>
-        </li>
-        <li class="nav-item mb-2">
-          <a class="nav-link text-white active" href="badges.html">Badges</a>
-        </li>
-        <li class="nav-item mt-4">
-          <a class="nav-link text-danger" href="../index.html">Logout</a>
-        </li>
-      </ul>
-    </div>
-
-    <!-- CONTENT -->
-    <div class="col-md-10 p-4">
-
-      <!-- HEADER -->
-      <h3 class="mb-1">Badges & Achievements</h3>
-      <p class="text-muted">
-        Earn badges by completing cybersecurity challenges and games
-      </p>
-
-      <!-- BADGES GRID -->
-      <div class="row mt-4">
-
-        <!-- BADGE 1 -->
-        <div class="col-md-3 mb-4">
-          <div class="card shadow text-center border-success">
-            <div class="card-body">
-              <h1>🛡️</h1>
-              <h6 class="mt-2">Phishing Defender</h6>
-              <p class="text-muted small">
-                Completed phishing detection game
-              </p>
-              <span class="badge bg-success">Unlocked</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- BADGE 2 -->
-        <div class="col-md-3 mb-4">
-          <div class="card shadow text-center border-success">
-            <div class="card-body">
-              <h1>🔐</h1>
-              <h6 class="mt-2">Password Master</h6>
-              <p class="text-muted small">
-                Created a strong password
-              </p>
-              <span class="badge bg-success">Unlocked</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- BADGE 3 -->
-        <div class="col-md-3 mb-4">
-          <div class="card shadow text-center border-warning">
-            <div class="card-body">
-              <h1>🕷️</h1>
-              <h6 class="mt-2">Malware Hunter</h6>
-              <p class="text-muted small">
-                Identified a fake website
-              </p>
-              <span class="badge bg-warning">In Progress</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- BADGE 4 -->
-        <div class="col-md-3 mb-4">
-          <div class="card shadow text-center border-secondary">
-            <div class="card-body">
-              <h1>🎭</h1>
-              <h6 class="mt-2">Social Engineer Aware</h6>
-              <p class="text-muted small">
-                Completed social engineering scenario
-              </p>
-              <span class="badge bg-secondary">Locked</span>
-            </div>
-          </div>
-        </div>
-
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../assets/css/main.css" />
+  </head>
+  <body>
+    <nav class="navbar topbar px-3">
+      <a class="icon-button" href="dashboard.html" title="Back to Hub">
+        <i class="fa-solid fa-arrow-left"></i>
+      </a>
+      <span class="navbar-brand fw-bold ms-2">
+        <i class="fa-solid fa-award accent"></i> Badges
+      </span>
+      <div class="quick-nav ms-auto">
+        <a class="icon-button" href="profile.html" title="Profile">
+          <i class="fa-solid fa-user-astronaut"></i>
+        </a>
+        <a class="icon-button" href="certificates.html" title="Certificates">
+          <i class="fa-solid fa-certificate"></i>
+        </a>
+        <a class="icon-button" href="notifications.html" title="Notifications">
+          <i class="fa-solid fa-bell"></i>
+        </a>
+        <a class="icon-button" href="leaderboard.html" title="Leaderboard">
+          <i class="fa-solid fa-trophy"></i>
+        </a>
       </div>
+    </nav>
 
-      <!-- ACHIEVEMENTS SUMMARY -->
-      <div class="card shadow mt-4">
-        <div class="card-body">
-          <h5>Your Achievement Summary</h5>
-
-          <div class="row mt-3 text-center">
-            <div class="col-md-4">
-              <h4>2</h4>
-              <p class="text-muted">Badges Earned</p>
-            </div>
-            <div class="col-md-4">
-              <h4>1</h4>
-              <p class="text-muted">In Progress</p>
-            </div>
-            <div class="col-md-4">
-              <h4>1</h4>
-              <p class="text-muted">Locked</p>
-            </div>
+    <main class="container stage">
+      <div class="game-grid">
+        <div class="game-tile">
+          <div class="icon-circle">
+            <i class="fa-solid fa-envelope-circle-check"></i>
           </div>
+          <div class="fw-semibold">Phishing Defender</div>
+          <span class="status-pill success">Unlocked</span>
+        </div>
 
-          <small class="text-muted">
-            Badge status updates dynamically based on user progress
-          </small>
+        <div class="game-tile">
+          <div class="icon-circle">
+            <i class="fa-solid fa-key"></i>
+          </div>
+          <div class="fw-semibold">Password Master</div>
+          <span class="status-pill success">Unlocked</span>
+        </div>
+
+        <div class="game-tile">
+          <div class="icon-circle">
+            <i class="fa-solid fa-bug"></i>
+          </div>
+          <div class="fw-semibold">Malware Hunter</div>
+          <span class="status-pill warn">In Progress</span>
+        </div>
+
+        <div class="game-tile">
+          <div class="icon-circle">
+            <i class="fa-solid fa-user-secret"></i>
+          </div>
+          <div class="fw-semibold">Social Shield</div>
+          <span class="status-pill locked">Locked</span>
         </div>
       </div>
-
-    </div>
-  </div>
-</div>
-
-</body>
+    </main>
+  </body>
 </html>

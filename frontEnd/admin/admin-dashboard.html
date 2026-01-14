@@ -1,138 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Admin Dashboard | Cyber Awareness Platform</title>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Admin Dashboard | CyberAware</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <!-- Bootstrap -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../assets/css/main.css" />
+  </head>
+  <body>
+    <nav class="navbar topbar px-3">
+      <a class="icon-button" href="../pages/dashboard.html" title="User Hub">
+        <i class="fa-solid fa-house"></i>
+      </a>
+      <span class="navbar-brand fw-bold ms-2">
+        <i class="fa-solid fa-screwdriver-wrench accent"></i> Admin Control
+      </span>
+      <a class="icon-button" href="../index.html" title="Exit">
+        <i class="fa-solid fa-right-from-bracket"></i>
+      </a>
+    </nav>
 
-  <!-- Custom CSS -->
-  <link rel="stylesheet" href="../assets/css/main.css">
-</head>
-<body>
-
-<!-- TOP NAVBAR -->
-<nav class="navbar navbar-dark bg-dark px-3">
-  <span class="navbar-brand h4 mb-0">
-    Admin Panel – Cyber Awareness Platform
-  </span>
-</nav>
-
-<div class="container-fluid">
-  <div class="row">
-
-    <!-- ADMIN SIDEBAR -->
-    <div class="col-md-2 bg-dark text-white min-vh-100 p-3">
-      <h6 class="text-center mb-4">ADMIN MENU</h6>
-
-      <ul class="nav flex-column">
-        <li class="nav-item mb-2">
-          <a class="nav-link text-white active" href="admin-dashboard.html">Dashboard</a>
-        </li>
-        <li class="nav-item mb-2">
-          <a class="nav-link text-white" href="manage-users.html">Manage Users</a>
-        </li>
-        <li class="nav-item mb-2">
-          <a class="nav-link text-white" href="manage-lessons.html">Lessons</a>
-        </li>
-        <li class="nav-item mb-2">
-          <a class="nav-link text-white" href="manage-quizzes.html">Quizzes</a>
-        </li>
-        <li class="nav-item mb-2">
-          <a class="nav-link text-white" href="analytics.html">Analytics</a>
-        </li>
-        <li class="nav-item mt-4">
-          <a class="nav-link text-danger" href="../index.html">Logout</a>
-        </li>
-      </ul>
-    </div>
-
-    <!-- MAIN CONTENT -->
-    <div class="col-md-10 p-4">
-
-      <!-- HEADER -->
-      <h3>Admin Dashboard</h3>
-      <p class="text-muted">
-        System overview and platform statistics
-      </p>
-
-      <!-- STATS CARDS -->
-      <div class="row mt-4 mb-4">
-
-        <div class="col-md-3">
-          <div class="card shadow text-center">
-            <div class="card-body">
-              <h4>120</h4>
-              <p class="text-muted mb-0">Total Users</p>
-            </div>
+    <main class="container stage">
+      <div class="hud mb-4">
+        <div class="stat-tile">
+          <div class="stat-icon">
+            <i class="fa-solid fa-users"></i>
+          </div>
+          <div>
+            <div class="stat-value">120</div>
+            <div class="stat-label">Total Users</div>
           </div>
         </div>
-
-        <div class="col-md-3">
-          <div class="card shadow text-center">
-            <div class="card-body">
-              <h4>8</h4>
-              <p class="text-muted mb-0">Learning Modules</p>
-            </div>
+        <div class="stat-tile">
+          <div class="stat-icon">
+            <i class="fa-solid fa-book"></i>
+          </div>
+          <div>
+            <div class="stat-value">8</div>
+            <div class="stat-label">Modules</div>
           </div>
         </div>
-
-        <div class="col-md-3">
-          <div class="card shadow text-center">
-            <div class="card-body">
-              <h4>350</h4>
-              <p class="text-muted mb-0">Quizzes Attempted</p>
-            </div>
+        <div class="stat-tile">
+          <div class="stat-icon">
+            <i class="fa-solid fa-clipboard-question"></i>
+          </div>
+          <div>
+            <div class="stat-value">350</div>
+            <div class="stat-label">Quizzes</div>
           </div>
         </div>
-
-        <div class="col-md-3">
-          <div class="card shadow text-center">
-            <div class="card-body">
-              <h4>65%</h4>
-              <p class="text-muted mb-0">Avg Completion Rate</p>
-            </div>
+        <div class="stat-tile">
+          <div class="stat-icon">
+            <i class="fa-solid fa-chart-line"></i>
           </div>
-        </div>
-
-      </div>
-
-      <!-- RECENT ACTIVITIES -->
-      <div class="card shadow mb-4">
-        <div class="card-body">
-          <h5>Recent Activities</h5>
-
-          <ul class="list-group list-group-flush mt-3">
-            <li class="list-group-item">
-              New user <b>Ashik</b> registered
-            </li>
-            <li class="list-group-item">
-              Quiz added: <b>Password Security</b>
-            </li>
-            <li class="list-group-item">
-              User <b>Rakib</b> completed Beginner Level
-            </li>
-            <li class="list-group-item">
-              New lesson published: <b>Phishing Awareness</b>
-            </li>
-          </ul>
+          <div>
+            <div class="stat-value">65%</div>
+            <div class="stat-label">Completion</div>
+          </div>
         </div>
       </div>
 
-      <!-- SYSTEM INFO -->
-      <div class="card shadow">
-        <div class="card-body">
-          <h5>System Status</h5>
-          <p class="mb-1">Server: <span class="text-success">Online</span></p>
-          <p class="mb-1">Database: <span class="text-success">Connected</span></p>
-          <p class="mb-0">Security Monitoring: <span class="text-success">Active</span></p>
-        </div>
+      <div class="game-grid mb-4">
+        <a class="game-tile text-decoration-none" href="manage-users.html">
+          <div class="icon-circle">
+            <i class="fa-solid fa-user-gear"></i>
+          </div>
+          <div class="fw-semibold">Manage Users</div>
+          <span class="status-pill warn">Admin</span>
+        </a>
+        <a class="game-tile text-decoration-none" href="manage-lessons.html">
+          <div class="icon-circle">
+            <i class="fa-solid fa-book-open"></i>
+          </div>
+          <div class="fw-semibold">Manage Lessons</div>
+          <span class="status-pill warn">Admin</span>
+        </a>
+        <a class="game-tile text-decoration-none" href="manage-quizzes.html">
+          <div class="icon-circle">
+            <i class="fa-solid fa-clipboard-list"></i>
+          </div>
+          <div class="fw-semibold">Manage Quizzes</div>
+          <span class="status-pill warn">Admin</span>
+        </a>
+        <a class="game-tile text-decoration-none" href="analytics.html">
+          <div class="icon-circle">
+            <i class="fa-solid fa-chart-simple"></i>
+          </div>
+          <div class="fw-semibold">Analytics</div>
+          <span class="status-pill warn">Admin</span>
+        </a>
       </div>
 
-    </div>
-  </div>
-</div>
-
-</body>
+      <div class="panel">
+        <div class="d-flex align-items-center gap-2 mb-3">
+          <i class="fa-solid fa-list accent"></i>
+          <span class="fw-semibold">Recent Activity</span>
+        </div>
+        <ul class="list-group">
+          <li class="list-group-item">New user registered</li>
+          <li class="list-group-item">Quiz added: Password Security</li>
+          <li class="list-group-item">User completed Beginner Level</li>
+          <li class="list-group-item">Lesson published: Phishing Awareness</li>
+        </ul>
+      </div>
+    </main>
+  </body>
 </html>

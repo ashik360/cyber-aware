@@ -1,189 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Manage Lessons | Admin Panel</title>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Manage Lessons | CyberAware Admin</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <!-- Bootstrap -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../assets/css/main.css" />
+  </head>
+  <body>
+    <nav class="navbar topbar px-3">
+      <a class="icon-button" href="admin-dashboard.html" title="Admin Home">
+        <i class="fa-solid fa-arrow-left"></i>
+      </a>
+      <span class="navbar-brand fw-bold ms-2">
+        <i class="fa-solid fa-book-open accent"></i> Manage Lessons
+      </span>
+    </nav>
 
-  <!-- Custom CSS -->
-  <link rel="stylesheet" href="../assets/css/main.css">
-</head>
-<body>
-
-<!-- TOP NAVBAR -->
-<nav class="navbar navbar-dark bg-dark px-3">
-  <span class="navbar-brand h4 mb-0">
-    Admin Panel – Cyber Awareness Platform
-  </span>
-</nav>
-
-<div class="container-fluid">
-  <div class="row">
-
-    <!-- ADMIN SIDEBAR -->
-    <div class="col-md-2 bg-dark text-white min-vh-100 p-3">
-      <h6 class="text-center mb-4">ADMIN MENU</h6>
-
-      <ul class="nav flex-column">
-        <li class="nav-item mb-2">
-          <a class="nav-link text-white" href="admin-dashboard.html">Dashboard</a>
-        </li>
-        <li class="nav-item mb-2">
-          <a class="nav-link text-white" href="manage-users.html">Manage Users</a>
-        </li>
-        <li class="nav-item mb-2">
-          <a class="nav-link text-white active" href="manage-lessons.html">Lessons</a>
-        </li>
-        <li class="nav-item mb-2">
-          <a class="nav-link text-white" href="manage-quizzes.html">Quizzes</a>
-        </li>
-        <li class="nav-item mb-2">
-          <a class="nav-link text-white" href="analytics.html">Analytics</a>
-        </li>
-        <li class="nav-item mt-4">
-          <a class="nav-link text-danger" href="../index.html">Logout</a>
-        </li>
-      </ul>
-    </div>
-
-    <!-- MAIN CONTENT -->
-    <div class="col-md-10 p-4">
-
-      <!-- HEADER -->
-      <div class="d-flex justify-content-between align-items-center mb-3">
-        <div>
-          <h3>Manage Lessons</h3>
-          <p class="text-muted mb-0">
-            Create, update, and organize cybersecurity lessons
-          </p>
+    <main class="container stage">
+      <div class="panel mb-4">
+        <div class="d-flex justify-content-between align-items-center mb-3">
+          <div class="fw-semibold">Lesson Library</div>
+          <button class="btn btn-glow btn-sm">Add Lesson</button>
         </div>
-        <button class="btn btn-success" disabled>
-          + Add New Lesson
-        </button>
+        <table class="table table-dark table-hover mb-0">
+          <thead>
+            <tr>
+              <th>Title</th>
+              <th>Level</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Phishing Basics</td>
+              <td>Beginner</td>
+              <td>Published</td>
+            </tr>
+            <tr>
+              <td>Password Hygiene</td>
+              <td>Beginner</td>
+              <td>Published</td>
+            </tr>
+            <tr>
+              <td>Social Engineering</td>
+              <td>Intermediate</td>
+              <td>Draft</td>
+            </tr>
+          </tbody>
+        </table>
       </div>
-
-      <!-- LESSON STATS -->
-      <div class="row mb-4">
-
-        <div class="col-md-4">
-          <div class="card shadow text-center">
-            <div class="card-body">
-              <h4>8</h4>
-              <p class="text-muted mb-0">Total Lessons</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-4">
-          <div class="card shadow text-center">
-            <div class="card-body">
-              <h4>5</h4>
-              <p class="text-muted mb-0">Published</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-4">
-          <div class="card shadow text-center">
-            <div class="card-body">
-              <h4>3</h4>
-              <p class="text-muted mb-0">Drafts</p>
-            </div>
-          </div>
-        </div>
-
-      </div>
-
-      <!-- LESSON TABLE -->
-      <div class="card shadow">
-        <div class="card-body">
-          <h5>Lesson List</h5>
-
-          <div class="table-responsive mt-3">
-            <table class="table table-hover table-striped">
-              <thead class="table-dark">
-                <tr>
-                  <th>#</th>
-                  <th>Lesson Title</th>
-                  <th>Category</th>
-                  <th>Level</th>
-                  <th>Status</th>
-                  <th>Actions</th>
-                </tr>
-              </thead>
-              <tbody>
-
-                <tr>
-                  <td>1</td>
-                  <td>Introduction to Cyber Security</td>
-                  <td>Basics</td>
-                  <td>Beginner</td>
-                  <td>
-                    <span class="badge bg-success">Published</span>
-                  </td>
-                  <td>
-                    <button class="btn btn-sm btn-primary" disabled>Edit</button>
-                    <button class="btn btn-sm btn-danger" disabled>Delete</button>
-                  </td>
-                </tr>
-
-                <tr>
-                  <td>2</td>
-                  <td>Phishing Awareness</td>
-                  <td>Email Security</td>
-                  <td>Beginner</td>
-                  <td>
-                    <span class="badge bg-success">Published</span>
-                  </td>
-                  <td>
-                    <button class="btn btn-sm btn-primary" disabled>Edit</button>
-                    <button class="btn btn-sm btn-danger" disabled>Delete</button>
-                  </td>
-                </tr>
-
-                <tr>
-                  <td>3</td>
-                  <td>Password Safety</td>
-                  <td>Authentication</td>
-                  <td>Beginner</td>
-                  <td>
-                    <span class="badge bg-warning">Draft</span>
-                  </td>
-                  <td>
-                    <button class="btn btn-sm btn-primary" disabled>Edit</button>
-                    <button class="btn btn-sm btn-danger" disabled>Delete</button>
-                  </td>
-                </tr>
-
-                <tr>
-                  <td>4</td>
-                  <td>Social Engineering</td>
-                  <td>Human Factors</td>
-                  <td>Intermediate</td>
-                  <td>
-                    <span class="badge bg-warning">Draft</span>
-                  </td>
-                  <td>
-                    <button class="btn btn-sm btn-primary" disabled>Edit</button>
-                    <button class="btn btn-sm btn-danger" disabled>Delete</button>
-                  </td>
-                </tr>
-
-              </tbody>
-            </table>
-          </div>
-
-          <small class="text-muted">
-            Lesson creation, editing, and publishing will be enabled after backend integration
-          </small>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</div>
-
-</body>
+    </main>
+  </body>
 </html>
